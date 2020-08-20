@@ -22,7 +22,7 @@ public class MachineLearningModel {
 	@PostConstruct
 	public void loadModel() {
 		//choose and load model
-		this.modelName = new String("C:\\Users\\Cephas\\EclipseWork\\learnWork\\gs-rest-service-complete\\src\\main\\resoutces\\iris_rf.model");
+		this.modelName = new String("src/main/resources/iris_rf.model");
 		try {
 			this.cls = (Classifier) SerializationHelper.read(modelName);
 			
